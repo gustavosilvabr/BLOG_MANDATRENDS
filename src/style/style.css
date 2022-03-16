@@ -1,0 +1,776 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 10px;
+}
+header {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgb(247, 62, 26) 0%,
+    rgb(255, 52, 96) 100%
+  );
+  justify-content: space-around;
+  align-items: center;
+}
+header .logo {
+  margin-top: 25px;
+  padding: 8px;
+  width: 450px;
+  height: 450px;
+  margin-left: -150px;
+  z-index: 1;
+  filter: brightness(100);
+}
+header .bolinhas {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 499px;
+  top: 200px;
+}
+header .setas {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 650px;
+  top: 10px;
+}
+header .mulher {
+  position: absolute;
+  bottom: -105px;
+  right: 29%;
+  height: 270px;
+}
+
+header .stilo-degrade {
+  width: 100%;
+  height: 100%;
+  background: url(/MANDATRENDS/src/img/linhas.svg) no-repeat;
+  position: absolute;
+  top: 30px;
+  left: -150px;
+}
+header .triangulo {
+  transform: rotate(-10deg);
+  position: absolute;
+  right: 45px;
+  top: 15px;
+}
+header .text-header {
+  position: absolute;
+  top: 55px;
+  right: 80px;
+}
+header .text-header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 27px;
+  color: white;
+  text-align: right;
+}
+header .text-header-onda {
+  position: absolute;
+  bottom: 30px;
+  right: 65px;
+}
+header .text-header-onda h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  margin: 15px;
+  text-align: right;
+  font-size: 16px;
+  color: white;
+}
+header .text-header-onda img {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  width: 140px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 47px;
+  
+}
+.principal {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.principal .img-principal-caixa {
+  width:100%;
+}
+.principal .img-principal {
+  margin-top: -8px;
+  width: 100%;
+}
+.principal .text-principal{
+  margin-top: -5px;
+}
+.principal h1 {
+  font-size: 46px;
+  margin-top: 15px;
+}
+.principal h2 {
+  font-size: 28px;
+  font-weight: 100;
+  color: slategray;
+  margin-top: 5px;
+}
+.principal p {
+  font-style: italic;
+  color: slategray;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.principal .efeito-degrade {
+  width: 500px;
+  height: 7px;
+  margin-bottom: 50px;
+  background: rgb(226, 32, 69);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 32, 69, 1) 39%,
+    rgba(79, 31, 173, 1) 81%
+  );
+}
+.caixa-central {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.caixa-central .caixa-basq {
+  width: 500px;
+  height: auto;
+}
+.caixa-central .caixa-basq .img-basq {
+  object-fit: cover;
+  width: 100%;
+}
+.caixa-central .caixa-basq h1 {
+  margin-top: 15px;
+  font-size: 33px;
+  text-align: left;
+}
+.caixa-central .caixa-basq p {
+  font-style: italic;
+  color: slategray;
+  margin-top: 25px;
+}
+.caixa-central .efeito-degrade2 {
+  width: 300px;
+  height: 7px;
+  margin-top: 10px;
+  background: rgb(32, 176, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(32, 176, 226, 0.7147233893557423) 31%,
+    rgba(79, 31, 173, 0.7959558823529411) 100%
+  );
+}
+.caixa-central .caixa-zap {
+  width: 500px;
+  height: auto;
+}
+.caixa-central .caixa-zap .img-zap {
+  object-fit: cover;
+  width: 100%;
+}
+.caixa-central .caixa-zap h1 {
+  margin-top: 15px;
+  font-size: 33px;
+  text-align: left;
+}
+.caixa-central .caixa-zap p {
+  font-style: italic;
+  color: slategray;
+  margin-top: 25px;
+}
+.caixa-central .efeito-degrade3 {
+  width: 300px;
+  height: 7px;
+  margin-top: 10px;
+  background: rgb(32, 226, 175);
+  background: linear-gradient(
+    90deg,
+    rgba(32, 226, 175, 0.7147233893557423) 49%,
+    rgba(10, 185, 71, 0.7959558823529411) 100%
+  );
+}
+footer {
+  display: flex;
+  width: auto;
+  height: 125px;
+  background: #fc4c02;
+  margin-top: -25px;
+}
+footer img {
+  display: flex;
+  margin: auto;
+  width: auto;
+}
+/* Copyright 	 */
+.copy {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(66, 63, 63);
+  font-size: 14px;
+}
+.copy a {
+  color: rgb(66, 63, 63);
+}
+/* Media query */
+@media (min-width: 320px) and (max-width: 479px) {
+  body {
+    padding: 0px;
+    margin: 0;
+  }
+  header {
+    width: auto;
+    height: auto;
+  }
+  header .stilo-degrade {
+    display: none;
+  }
+  header .logo {
+    width: 100vw;
+    margin: auto;
+    height:19vh;
+  }
+  header .mulher {
+    display: none;
+  }
+  header .bolinhas {
+    display: none;
+  }
+  header .triangulo {
+    display: none;
+  }
+  header .text-header {
+    display: none;
+  }
+  header .text-header h1 {
+    display: none;
+  }
+  header .text-header-onda {
+    display: none;
+  }
+  header .setas {
+    display: none;
+  }
+  section {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .principal {
+    margin-top: -29px;
+  }
+  .principal .img-principal-caixa {
+    width:100vw;
+    padding:15px;
+  }
+  .principal .img-principal {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .principal .text-principal{
+    margin-left: 15px;
+  }
+  .principal h1 {
+    font-size: 16px;
+    
+  }
+  .principal h2 {
+    font-size: 11px;
+  }
+  .principal p {
+    font-size: 9px;
+  }
+  .principal .efeito-degrade {
+    width: 220px;
+    margin-left: 15px;
+    height: 3.5px;
+  }
+  .caixa-central {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .caixa-central .caixa-basq {
+    width: auto;
+    height: 300px;
+    padding: 10px;
+    margin-top: -60px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+  }
+  .caixa-central .caixa-basq .img-basq {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .caixa-central .caixa-basq h1 {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 3px;
+  }
+  .caixa-central .caixa-basq p {
+    font-size: 10px;
+  }
+  .caixa-central .caixa-basq .efeito-degrade2 {
+    width: 125px;
+    height: 3.5px;
+   
+  }
+  .caixa-central .caixa-zap {
+    width: auto;
+    height: 300px;
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 5px;
+   
+  }
+  .caixa-central .caixa-zap .img-zap{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .caixa-central .caixa-zap h1 {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 3px;
+  }
+  .caixa-central .caixa-zap p {
+    font-size: 10px;
+  }
+  .caixa-central .caixa-zap .efeito-degrade3 {
+    width: 125px;
+    height: 3.5px;
+  }
+  footer {
+    width: 100vw;
+    height: 90px;
+    margin-top: 100px;
+  }
+  footer img {
+    width: 70%;
+  }
+.copy{
+  margin: 10px;
+}
+  .copy p {
+    font-size: 9.9px;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px){
+  html{
+      width: 600px;
+  }
+  header{
+   height: 200px;
+ 
+  }
+  header .logo{
+    width: 239px;
+    margin-left: -80px;
+    margin-top: 20px;
+  }
+  header .stilo-degrade{
+    top: 50px;
+    left: -190px;
+  }
+  header .bolinhas{
+    left:210px;
+    top: 150px;
+    width: 50px;
+  }
+  header .setas{
+    left: 300px;
+    top: 20px;
+    width: 30px;
+  }
+  header .mulher{
+    width: 140px;
+    top: 47px;
+  }
+  header .triangulo{
+    right: 5px;
+    width: 24px;
+    top: 30px;
+  }
+  header .text-header{
+    right: 20px;
+  }
+  header .text-header h1{
+    font-size: 16px;
+  }
+  header .text-header-onda{
+    right: 4px;
+  }
+  header .text-header-onda h1{
+    font-size: 16px;
+  }
+  header .text-header-onda img{
+    width: 100px;
+    right: 14px;
+  }
+  section{
+    margin-top: 30px;
+    margin-right: 32px;
+    margin-left: 5px;
+  }
+
+  .principal .img-principal-caixa .img-principal{
+    width: 100%;
+    margin: auto;
+    margin-left: 13px;
+  }
+
+  .principal .text-principal{
+    margin-left: 10px;
+  }
+  .principal .text-principal h1{
+    font-size: 21.9px;
+  }
+  .principal .text-principal h2{
+    font-size: 14px;
+  }
+  .principal .text-principal p{
+    font-size: 13px;
+  }
+  .principal .efeito-degrade{
+    margin-left: 10px;
+    width: 400px;
+  }
+  .caixa-central .caixa-basq {
+    margin-right:10px;
+    margin-left: 10px;
+    width: 250px;
+  }
+  .caixa-central .caixa-basq .text-caixa-basq h1{
+    font-size: 18px;
+  }
+ 
+  .caixa-central .efeito-degrade2 {
+    width: 150px;
+  }
+  .caixa-central .caixa-zap {
+    width: 250px;
+  } 
+  .caixa-central .caixa-zap .text-zap h1{
+    font-size: 18px;
+  }
+  .caixa-central .efeito-degrade3{
+    width: 150px;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px){
+
+  html{
+    width: 800px;
+  }
+  header .logo{
+    width:350px;
+    margin-left: -140px;
+    margin-top: 40px;
+  }
+  header .stilo-degrade{
+    top: 50px;
+    left: -150px;
+  }
+  header .bolinhas{
+    left:320px;
+    top: 200px;
+    width: 60px;
+  }
+  header .setas{
+    left: 410px;
+    top: 20px;
+    width: 40px;
+  }
+  header .mulher{
+    width: 240px;
+    top: 85px;
+    left: 370px;
+  }
+  header .triangulo{
+    right: 5px;
+    width: 28px;
+    top: 30px;
+  }
+  header .text-header{
+    right: 20px;
+    top: 60px;
+  }
+  header .text-header h1{
+    font-size: 18px;
+  }
+  header .text-header-onda{
+    right: 4px;
+  }
+  header .text-header-onda h1{
+    font-size: 17px;
+  }
+  header .text-header-onda img{
+    width: 100px;
+    right: 14px;
+  }
+  .principal .text-principal h1{
+    font-size: 29px;
+  }
+  .principal .text-principal h2{
+    font-size: 18px;
+  }
+  .principal .text-principal p{
+    font-size: 13px;
+  }
+  .principal .efeito-degrade{
+    width: 400px;
+  }
+  .caixa-central{
+    width: auto;
+    height:auto;
+  }
+  .caixa-central .caixa-basq {
+    width:435px;
+    height: auto;
+    margin: 10px;
+  }
+  .caixa-central .caixa-basq .img-basq {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .caixa-central .caixa-basq .text-caixa-basq h1{
+    font-size: 17px;
+  }
+ 
+  .caixa-central .efeito-degrade2 {
+    width: 150px;
+  }
+  .caixa-central .caixa-zap {
+    width:435px;
+    margin: 10px;
+  } 
+  .caixa-central .caixa-zap .img-zap{
+ 
+    background-size: cover;
+  }
+  .caixa-central .caixa-zap .text-zap h1{
+    font-size: 17px;
+  }
+  .caixa-central .efeito-degrade3{
+    width: 150px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1024px){
+  html{
+    width: 1024px;
+  }
+  header .logo{
+    width:350px;
+    margin-left: -140px;
+    margin-top: 40px;
+  }
+  header .stilo-degrade{
+    top: 50px;
+    left: -150px;
+  }
+  header .bolinhas{
+    left:400px;
+    top: 200px;
+    width: 60px;
+  }
+  header .setas{
+    left: 490px;
+    top: 20px;
+    width: 40px;
+  }
+  header .mulher{
+    width: 240px;
+    top: 85px;
+    left: 470px;
+  }
+  header .triangulo{
+    right: 14px;
+    width: 30px;
+    top: 30px;
+  }
+  header .text-header{
+    right: 30px;
+    top: 60px;
+  }
+  header .text-header h1{
+    font-size: 25px;
+  }
+  header .text-header-onda{
+    right: 19px;
+  }
+  header .text-header-onda h1{
+    font-size: 18px;
+  }
+  header .text-header-onda img{
+    width: 120px;
+    right: 14px;
+  }
+  .principal .text-principal h1{
+    font-size: 38px;
+  }
+  .principal .text-principal h2{
+    font-size: 23px;
+  }
+  .principal .text-principal p{
+    font-size: 13px;
+  }
+  .principal .efeito-degrade{
+    width: 470px;
+  }
+  .caixa-central{
+    width: auto;
+    height:auto;
+  }
+  .caixa-central .caixa-basq {
+    width:435px;
+    height: auto;
+    margin: 10px;
+  }
+  .caixa-central .caixa-basq .img-basq {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .caixa-central .caixa-basq .text-caixa-basq h1{
+    font-size: 17px;
+  }
+ 
+  .caixa-central .efeito-degrade2 {
+    width: 150px;
+  }
+  .caixa-central .caixa-zap {
+    width:435px;
+    margin: 10px;
+  } 
+  .caixa-central .caixa-zap .img-zap{
+ 
+    background-size: cover;
+  }
+  .caixa-central .caixa-zap .text-zap h1{
+    font-size: 17px;
+  }
+  .caixa-central .efeito-degrade3{
+    width: 150px;
+  }
+}
+@media (min-width: 1025px) and (max-width:1200px){
+  html{
+    width: 1200px;
+  }
+  header .logo{
+    width:350px;
+    margin-left: -140px;
+    margin-top: 40px;
+  }
+  header .stilo-degrade{
+    top: 50px;
+    left: -150px;
+  }
+  header .bolinhas{
+    left:450px;
+    top: 200px;
+    width: 60px;
+  }
+  header .setas{
+    left: 630px;
+    top: 20px;
+    width: 40px;
+  }
+  header .mulher{
+    width: 400px;
+    top: 85px;
+    left: 520px;
+  }
+  header .triangulo{
+    right: 14px;
+    width: 30px;
+    top: 30px;
+  }
+  header .text-header{
+    right: 30px;
+    top: 60px;
+  }
+  header .text-header h1{
+    font-size: 25px;
+  }
+  header .text-header-onda{
+    right: 19px;
+  }
+  header .text-header-onda h1{
+    font-size: 18px;
+  }
+  header .text-header-onda img{
+    width: 120px;
+    right: 14px;
+  }
+  .principal .text-principal h1{
+    font-size: 46px;
+  }
+  .principal .text-principal h2{
+    font-size: 28px;
+  }
+  .principal .text-principal p{
+    font-size: 13px;
+  }
+  .principal .efeito-degrade{
+    width: 570px;
+  }
+  .caixa-central{
+    width: auto;
+    height:auto;
+  }
+  .caixa-central .caixa-basq {
+    width:435px;
+    height: auto;
+    margin: 10px;
+  }
+  .caixa-central .caixa-basq .img-basq {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .caixa-central .caixa-basq .text-caixa-basq h1{
+    font-size: 17px;
+  }
+ 
+  .caixa-central .efeito-degrade2 {
+    width: 250px;
+  }
+  .caixa-central .caixa-zap {
+    width:435px;
+    margin: 10px;
+  } 
+  .caixa-central .caixa-zap .img-zap{
+ 
+    background-size: cover;
+  }
+  .caixa-central .caixa-zap .text-zap h1{
+    font-size: 17px;
+  }
+  .caixa-central .efeito-degrade3{
+    width: 250px;
+  }
+}
