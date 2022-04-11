@@ -1,4 +1,4 @@
-# -MINI-BLOG-MANDATRENDS-
+# -BLOG MANDATRENDS
 Mini blog do processo seletivo da mandatrends Estagio
 
 
